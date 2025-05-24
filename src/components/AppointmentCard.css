@@ -1,0 +1,119 @@
+.appointment-card {
+  margin-bottom: var(--space-3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.appointment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-3);
+}
+
+.appointment-info {
+  flex: 1;
+}
+
+.appointment-info h3 {
+  margin: 0 0 var(--space-1) 0;
+  color: var(--neutral-900);
+}
+
+.appointment-details {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.appointment-date {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: 0.875rem;
+  color: var(--neutral-700);
+}
+
+.appointment-type {
+  font-size: 0.75rem;
+  background-color: var(--neutral-100);
+  color: var(--neutral-700);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--border-radius-sm);
+}
+
+.patient-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--secondary-500);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.reminder-status {
+  background-color: var(--neutral-50);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-2) var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.reminder-label {
+  font-size: 0.75rem;
+  color: var(--neutral-700);
+  margin-bottom: var(--space-1);
+  font-weight: 500;
+}
+
+.reminder-badges {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.reminder-badge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--border-radius-sm);
+  font-weight: 500;
+}
+
+.reminder-badge.pending {
+  background-color: var(--neutral-200);
+  color: var(--neutral-700);
+}
+
+.reminder-badge.sent {
+  background-color: rgba(25, 135, 84, 0.1);
+  color: var(--success);
+}
+
+.card-actions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-2);
+}
+
+.card-actions button {
+  font-size: 0.75rem;
+  padding: 0.375rem;
+}
+
+.card-actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 640px) {
+  .card-actions {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-2);
+  }
+  
+  .card-actions button {
+    margin-bottom: var(--space-2);
+  }
+}

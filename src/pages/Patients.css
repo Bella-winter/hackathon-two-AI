@@ -1,0 +1,226 @@
+.patients-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-4);
+}
+
+.search-wrapper {
+  position: relative;
+  margin-bottom: var(--space-4);
+}
+
+.search-icon {
+  position: absolute;
+  left: var(--space-2);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--neutral-500);
+}
+
+.search-input {
+  width: 100%;
+  padding: var(--space-2) var(--space-2) var(--space-2) calc(var(--space-4) + 16px);
+  border: 1px solid var(--neutral-300);
+  border-radius: var(--border-radius-md);
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-400);
+  box-shadow: 0 0 0 3px rgba(10, 110, 189, 0.1);
+}
+
+.patients-table-container {
+  background-color: white;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.patients-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.patients-table th {
+  background-color: var(--neutral-50);
+  text-align: left;
+  padding: var(--space-3);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--neutral-700);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.patients-table td {
+  padding: var(--space-3);
+  border-bottom: 1px solid var(--neutral-200);
+  font-size: 0.875rem;
+}
+
+.patients-table tr:last-child td {
+  border-bottom: none;
+}
+
+.patients-table tr:hover {
+  background-color: var(--neutral-50);
+}
+
+.patient-cell {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.patient-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--secondary-500);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.patient-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.patient-name {
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.patient-id {
+  font-size: 0.75rem;
+  color: var(--neutral-600);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: 0.8125rem;
+  color: var(--neutral-700);
+}
+
+.reminder-preference {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.preference-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--primary-50);
+  color: var(--primary-500);
+}
+
+.preference-text {
+  font-size: 0.8125rem;
+}
+
+.appointment-date {
+  font-size: 0.8125rem;
+}
+
+.no-appointment {
+  font-size: 0.8125rem;
+  color: var(--neutral-600);
+  font-style: italic;
+}
+
+.patient-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--border-radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.patient-status.active {
+  background-color: rgba(25, 135, 84, 0.1);
+  color: var(--success);
+}
+
+.patient-status.inactive {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: var(--danger);
+}
+
+.action-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--neutral-600);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.action-button:hover {
+  background-color: var(--neutral-100);
+  color: var(--neutral-900);
+}
+
+.empty-state {
+  padding: var(--space-6);
+  text-align: center;
+}
+
+.empty-state h3 {
+  margin-bottom: var(--space-2);
+}
+
+.empty-state p {
+  color: var(--neutral-600);
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+  
+  .page-header button {
+    width: 100%;
+  }
+  
+  .patients-table-container {
+    overflow-x: auto;
+  }
+  
+  .patients-table {
+    min-width: 800px;
+  }
+}
