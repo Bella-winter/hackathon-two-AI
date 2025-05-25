@@ -1,47 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  /* Primary colors - Calming blue palette */
+  /* Primary colors - Deep blue palette */
   --primary-50: #f0f7ff;
   --primary-100: #e0f0ff;
   --primary-200: #b9ddff;
   --primary-300: #8ac7ff;
   --primary-400: #5ba9ff;
   --primary-500: #3b82f6;
-  --primary-600: #2563eb;
-  --primary-700: #1d4ed8;
-  --primary-800: #1e40af;
-  --primary-900: #1e3a8a;
+  --primary-600: #1e40af;
+  --primary-700: #1e3a8a;
+  --primary-800: #172554;
+  --primary-900: #0f172a;
 
-  /* Secondary colors - Soothing sage */
+  /* Secondary colors - Rich sage */
   --secondary-50: #f4f8f6;
   --secondary-100: #e6efe9;
   --secondary-200: #bfd9c9;
   --secondary-300: #97c3aa;
   --secondary-400: #70ad8b;
   --secondary-500: #4a8c6c;
-  --secondary-600: #3b7057;
-  --secondary-700: #2c5442;
-  --secondary-800: #1e382c;
-  --secondary-900: #0f1c16;
+  --secondary-600: #2c5442;
+  --secondary-700: #1e382c;
+  --secondary-800: #14261e;
+  --secondary-900: #0a1310;
 
-  /* Neutral colors - Warm grays */
+  /* Neutral colors - Deep grays */
   --neutral-50: #fafaf9;
   --neutral-100: #f5f5f4;
   --neutral-200: #e7e5e4;
   --neutral-300: #d6d3d1;
   --neutral-400: #a8a29e;
   --neutral-500: #78716c;
-  --neutral-600: #57534e;
-  --neutral-700: #44403c;
-  --neutral-800: #292524;
-  --neutral-900: #1c1917;
+  --neutral-600: #44403c;
+  --neutral-700: #292524;
+  --neutral-800: #1c1917;
+  --neutral-900: #0c0a09;
 
-  /* Status colors - Muted tones */
-  --success: #059669;
-  --warning: #d97706;
-  --danger: #dc2626;
-  --info: #0891b2;
+  /* Status colors - Rich tones */
+  --success: #15803d;
+  --warning: #b45309;
+  --danger: #b91c1c;
+  --info: #0369a1;
 
   /* Spacing */
   --space-1: 4px;
@@ -60,9 +60,9 @@
   --border-radius-xl: 16px;
 
   /* Shadows */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.03);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.06);
 }
 
 * {
@@ -125,22 +125,22 @@ button, .btn {
 }
 
 .btn-primary {
-  background-color: var(--primary-600);
+  background-color: var(--primary-700);
   color: white;
 }
 
 .btn-primary:hover {
-  background-color: var(--primary-700);
+  background-color: var(--primary-800);
   transform: translateY(-1px);
 }
 
 .btn-secondary {
-  background-color: var(--secondary-600);
+  background-color: var(--secondary-700);
   color: white;
 }
 
 .btn-secondary:hover {
-  background-color: var(--secondary-700);
+  background-color: var(--secondary-800);
   transform: translateY(-1px);
 }
 
@@ -188,22 +188,22 @@ button, .btn {
 }
 
 .badge-success {
-  background-color: rgba(5, 150, 105, 0.1);
+  background-color: rgba(21, 128, 61, 0.1);
   color: var(--success);
 }
 
 .badge-warning {
-  background-color: rgba(217, 119, 6, 0.1);
+  background-color: rgba(180, 83, 9, 0.1);
   color: var(--warning);
 }
 
 .badge-danger {
-  background-color: rgba(220, 38, 38, 0.1);
+  background-color: rgba(185, 28, 28, 0.1);
   color: var(--danger);
 }
 
 .badge-info {
-  background-color: rgba(8, 145, 178, 0.1);
+  background-color: rgba(3, 105, 161, 0.1);
   color: var(--info);
 }
 
@@ -258,7 +258,7 @@ button, .btn {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border-left-color: var(--primary-600);
+  border-left-color: var(--primary-700);
   animation: spin 0.8s linear infinite;
 }
 
